@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de texto</title>
+    <link rel="stylesheet" href="./estilo/estilo.css">
+    </head>
+<body>
+    <header><img class="logoAlura" src="./imagens/a.png" alt="logo da alura"></header>
+    <main class="corpo">
+        <section>
+            <textarea class="areaTexto" cols="41" rows="10" placeholder="Digite sua mensagem"></textarea>
+            <div class="informacao">
+                <h6>Por favor, insira apenas letras minúsculas sem acentos ou caracteres especiais.</h6>
+            </div>
+            <div class="botoes">
+                <button class="btnEncriptar" onclick="btnEncriptar()">Criptografar</button>
+                <button class="btnDescripto" onclick="btnDescriptar()">Descriptografar</button>
+            </div>
+        </section>
+        <section class="containerMensagem">
+                <textarea id="outputMensagem" class="mensagem" cols="20" rows="15">Sua mansagem aparecerá aqui</textarea>
+                <img src="/imagens/lupa.png" alt="imagem lupa" class="imagemLupa" id="imagemLupa">
+            
+            <div class="copiaLimpa">
+                <button class="btnCopiar" onclick="btnCopiar()">Copiar</button>
+                <button class="btnLimpar" onclick="limparCampo()">Limpar</button>
+            </div>
+        </section>
+        
+    </main>
+    <footer class="rodape">
+        Desenvolvido por Fabiana Cortello
+        <div class="icons">
+            <a href="https://linkedin.com/in/fabiana-cortello" target="_blank"> 
+                <img src="/imagens/linkedin 2.jpg" class="imagem" alt="logo linkedin" title="Linkedin">
+            </a>
+            <a href="https://github.com/FabsCortello" target="_blank"> 
+                <img src="/imagens/github2.png" class="github" alt="logo github" title="Github">
+            </a>
+            <a href="mailto:biofabi@gmail.com" target="_blank"> 
+                <img src="/imagens/email 2.png" class="imagem" alt="logo email" title="E-mail"> 
+            </a>
+    </div>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>
+
